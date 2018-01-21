@@ -1,0 +1,1005 @@
+/* ------------------------------------------------ center div for every page -------------------------------------- */
+
+.center {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 10px;
+}
+/* ------------------------ specific css for homepage (index.html, except for font, which are grouped separately ----------------*/
+
+#titlecontainer {
+    z-index: 1000;
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    color: black;
+    height: 200px;
+    width: 1150px;
+   
+    text-shadow: 3px 3px white;
+    background-color: transparent;
+    /*
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+    */
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#imagecontainer {
+    z-index: 1;
+    height: 714px;
+    width: 1200px;
+    
+}
+
+
+#centerbuttons {
+background-color: transparent;
+height: 180px;
+width: 700px;
+position: absolute;
+left: 100px;
+top: 250px;
+padding-left: 5px;
+z-index: 1000;
+}
+
+#upline {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    color: black;
+    background-color: transparent;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px white;
+    z-index: 1000;
+}
+
+
+
+.button1 {
+   border: 2px white;
+   background: transparent;
+   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+   background: -webkit-linear-gradient(top, transparent, transparent);
+   background: -moz-linear-gradient(top, transparent, transparent);
+   background: -ms-linear-gradient(top, transparent, transparent);
+   background: -o-linear-gradient(top, transparent, transparent);
+   background-image: -ms-linear-gradient(top, transparent 0%, transparent 100%);
+
+   padding-top: 0px;
+   padding-right: 20px;
+   padding-bottom: 0px;
+  
+
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: white 3px 3px;
+   color: black;
+   font-size: 55px;
+   font-family: 'Montserrat', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button1:hover {
+   text-shadow: transparent 3px 3px;
+   border: 0px solid white;
+   background: white;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+   background: -webkit-linear-gradient(top, transparent, transparent);
+   background: -moz-linear-gradient(top, transparent, transparent);
+   background: -ms-linear-gradient(top, transparent, transparent);
+   background: -o-linear-gradient(top, transparent, transparent);
+   background-image: -ms-linear-gradient(top, transparent 0%, transparent 100%);
+   color: #707070;
+    
+}
+
+.button1:active {
+   text-shadow: white 0 1px 0;
+   border: 0px solid white;
+   background: transparent;
+   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+   background: -webkit-linear-gradient(top, transparent, transparent);
+   background: -moz-linear-gradient(top, transparent, transparent);
+   background: -ms-linear-gradient(top, transparent, transparent);
+   background: -o-linear-gradient(top, transparent, transparent);
+   background-image: -ms-linear-gradient(top, transparent 0%, transparent 100%);
+   color: black;
+   }
+
+
+
+
+
+
+/* ---------------------------------------------------- css for fonts ---------------------------------------------- */
+
+#homepagefont {
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 20px 10px 5px 0px;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1000;
+    
+}
+
+#workfont {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+#h1fonts {
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 20px 10px 5px 0px;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+#h2fonts {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+#h3fonts {
+    color: black;
+    background-color: white;
+    padding: 10px 10px 40px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#h4fonts {
+    color: black;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 20px 10px 5px 0px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h2floatclear {
+    clear: both;
+    display: block;
+}
+
+#h3ward {
+    color: black;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -------------------------------------------------- css for buttons ------------------------------------------------ */
+
+#buttonbox {
+    position: relative;
+    background-color: transparent;
+    padding-left: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+   border: 0px white;
+   background: white;
+   background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+   background: -webkit-linear-gradient(top, white, white);
+   background: -moz-linear-gradient(top, white, white);
+   background: -ms-linear-gradient(top, white, white);
+   background: -o-linear-gradient(top, white, white);
+   background-image: -ms-linear-gradient(top, white 0%, white 100%);
+  
+   padding-top: 0px;
+   padding-right: 10px;
+   padding-bottom: 0px;
+   
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: white 0 1px 0;
+   color: black;
+   font-size: 14px;
+   font-family: 'Montserrat', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button:hover {
+   text-shadow: white 0 1px 0;
+   border: 0px solid white;
+   background: white;
+   background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+   background: -webkit-linear-gradient(top, white, white);
+   background: -moz-linear-gradient(top, white, white);
+   background: -ms-linear-gradient(top, white, white);
+   background: -o-linear-gradient(top, white, white);
+   background-image: -ms-linear-gradient(top, white 0%, white 100%);
+   color: #707070;
+    
+}
+
+.button:active {
+   text-shadow: white 0 1px 0;
+   border: 0px solid white;
+   background: white;
+   background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+   background: -webkit-linear-gradient(top, white, white);
+   background: -moz-linear-gradient(top, white, white);
+   background: -ms-linear-gradient(top, white, white);
+   background: -o-linear-gradient(top, white, white);
+   background-image: -ms-linear-gradient(top, white 0%, white 100%);
+   color: black;
+   }
+
+/* ------------------------------------------- specific css for work3 page --------------------------------------------*/
+
+#workcontainertest {
+    background-color: solid blue;
+    position: relative;
+    height: 350px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#innerworkcontainer { 
+      background-image: url("https://i.imgur.com/MhOpglY.png");
+      position:absolute; 
+      height: 350px;
+      width:100%; 
+    
+}
+
+
+
+
+/* ------------------------------------------ specific css for work page (Work.html) --------------------------------- */
+
+
+#workcenter {
+color: white;
+/*
+background-image: url("https://i.imgur.com/MhOpglY.png"); 
+*/
+border: 2px solid black;
+height: 355px;
+width: auto;
+position: relative;
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+#container1 {
+    position: relative;
+    height: 335px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+#container2 {
+      background-image: url("https://i.imgur.com/MhOpglY.png");
+      position:absolute; 
+      height: 335px;
+      width:90%;
+    
+      z-index: 100;
+    
+}
+
+.buttonbox3 {
+    display: inline-block;
+    width: 200px;
+    height: 140px;
+    margin: 10px;
+    border: 3px solid black;
+    background-color: white;
+    z-index: 500;
+}
+
+.link {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.button3 {
+   border: 0px white;
+   background: transparent;
+   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+   background: -webkit-linear-gradient(top, transparent, transparent);
+   background: -moz-linear-gradient(top, transparent, transparent);
+   background: -ms-linear-gradient(top, transparent, transparent);
+   background: -o-linear-gradient(top, transparent, transparent);
+   background-image: -ms-linear-gradient(top, transparent 0%, transparent 100%);
+   padding-top: 0px;
+   padding-right: 10px;
+   padding-bottom: 0px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: white 2px 2px;
+   color: black;
+   font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button3:hover {
+   text-shadow: white 0 1px 0;
+   border: 0px solid white;
+   background: white;
+   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+   background: -webkit-linear-gradient(top, transparent, transparent);
+   background: -moz-linear-gradient(top, transparent, transparent);
+   background: -ms-linear-gradient(top, transparent, transparent);
+   background: -o-linear-gradient(top, transparent, transparent);
+   background-image: -ms-linear-gradient(top, transparent 0%, transparent 100%);
+   color: #707070;
+    
+}
+
+.button3:active {
+   text-shadow: white 0 1px 0;
+   border: 0px solid white;
+   background: white;
+   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+   background: -webkit-linear-gradient(top, transparent, transparent);
+   background: -moz-linear-gradient(top, transparent, transparent);
+   background: -ms-linear-gradient(top, transparent, transparent);
+   background: -o-linear-gradient(top, transparent, transparent);
+   background-image: -ms-linear-gradient(top, transparent 0%, transparent 100%);
+   color: black;
+   }
+
+/* -------------------------------------------specific css for projects page ------------------------------------------- */
+
+.bushwickbox {
+    display: inline-block;
+    width: 223px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    background-image: url("https://i.imgur.com/p1WNuID.png");
+}
+
+.bushwickbox2 {
+    display: inline-block;
+    width: 444px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    background-image: url("https://i.imgur.com/r7Eyu0t.png");
+}
+
+.bushwickbox3 {
+    display: inline-block;
+    width: 218px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    background-image: url("https://i.imgur.com/tql9VbZ.png");
+}
+
+#map2container {
+    position: relative;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#map2 {
+    position: absolute; 
+      height: 400px;
+      width: 100%;
+      z-index: 100;
+}
+
+#legend2 {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background-color:rgba(255,255,255,.6);
+    height: 190px;
+    width: 240px;
+    padding: 15px;
+    z-index: 900;
+}
+
+#legend2title {
+    z-index: 102;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+#symboltextcontainer {
+    position: relative;
+    background-color: transparent;
+    height: 130px;
+    width: 220px;
+    z-index: 999;
+}
+
+
+.dot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #0099ff;
+    border-radius: 50%;
+}
+
+#bussymbol {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 40px;
+    height: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #999999;
+    text-shadow: 1px 1px #999999;
+    background-color: transparent;
+    
+}
+
+#propbussymbol {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 40px;
+    height: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #009933;
+    text-shadow: 1px 1px #009933;
+    background-color: transparent;    
+}
+
+#bikesymbol {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 40px;
+    height: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #e67300;
+    text-shadow: 1px 1px #e67300;
+    background-color: transparent;
+}
+
+#collegetext {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    width: 150px;
+    height: 20px;
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;    
+}
+
+#bustext {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 150px;
+    height: 20px;
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;    
+}
+#propbustext {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    width: 150px;
+    height: 20px;
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+
+#biketext {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    width: 150px;
+    height: 20px;
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+
+
+#ward {
+    float: left;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-image: url("https://i.imgur.com/Fdfnwh1.png");    
+}
+
+#wardtext {
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 575px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    
+   }
+
+/* ------------------------------------------ specific css for policy page----------------------------------------------------------*/
+
+#utc {
+    float: left;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-image: url("https://i.imgur.com/yYwHyk8.jpg");    
+}
+
+#utctext {
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 600px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    
+   }
+
+#thesis {
+    float: left;
+    position: relative;
+    width: 236px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-image: url("https://i.imgur.com/65eySbF.png");    
+}
+
+#thesistext {
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 760px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    
+   }
+
+#sg {
+    float: left;
+    position: relative;
+    width: 306px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-image: url("https://i.imgur.com/X5vLhD4.png");    
+}
+
+#sgtext {
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 690px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    
+   }
+
+
+
+/* ------------------------------------------ specific css for CV & InProgress pages ----------------------------------------------- */
+
+
+
+#placediv {
+    background-color: yellow;
+    height: 300px;
+    
+    border: 2px solid black;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.ddot {
+    float: left;
+    position: relative;
+    background-color: white;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ddot .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.ddot:hover .img-top {
+    display: inline;
+}
+
+#ddottext {
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 575px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    
+   }
+
+.belle {
+    float: left;
+    position: relative;
+    background-color: white;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.belle .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.belle:hover .img-top {
+    display: inline;
+}
+/*
+#belletext {
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    height: 300px;
+    width: 420px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;    
+}
+*/
+
+#belletext {
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 420px;
+    height: 300px;
+    margin: 20px;
+    border: 0px;
+    
+   }
+
+
+
+
+/* ------------------------------------------ specific css for maps & images on Maps.html ----------------------------- */
+     
+#mapboxcontainer {
+    position: relative;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#map { 
+      position:absolute; 
+      height: 400px;
+      width:100%;
+      z-index: 100;
+    
+}
+
+#legend {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background-color:rgba(255,255,255,.9);
+    height: 120px;
+    width: 300px;
+    padding: 15px;
+    z-index: 900;
+}
+
+#legendtitle {
+    z-index: 102;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+#text4box1 {
+    z-index: 100;
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    margin-top: 19px;
+    margin-left: 25px;
+}
+#text4box5 {
+    z-index: 100;
+    color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    margin-top: 19px;
+    margin-right: 10px;
+}
+
+#box1 {
+        z-index: 100;
+        background-color:#DCDFE2;
+        opacity: 1;
+        height: 25px;
+        width:  25px;
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+}
+        #box2 {
+        z-index: 100;
+        background-color:#BED2E4;
+        opacity: 1;
+        height: 25px;
+        width: 25px;
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       
+        }
+        #box3 {
+        z-index: 100;
+        background-color:#6CA9CC;
+        opacity: 1;
+        height: 25px;
+        width: 25px;
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       
+        }
+        #box4 {
+        z-index: 100;
+        background-color: #2672AF;
+        opacity: 1;
+        height: 25px;
+        width: 25px;
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        }
+        #box5 {
+        z-index: 100;
+        background-color: #072C64;
+        opacity: 1;
+        height: 25px;
+        width: 25px;
+        float: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 5px;
+       
+        }
+
+#cartocontainer {
+    position: relative;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.preindust {
+    float: left;
+    position: relative;
+    background-color: white;
+    height: 545px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.preindust .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.preindust:hover .img-top {
+    display: inline;
+}
+
+#pretextcontainer {
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    height: 545px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;    
+}
+
+.eight {
+    position: relative;
+    height: 296px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+.eight .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.eight:hover .img-top {
+    display: inline;
+}
+
+#redcontainer {
+    float: left;
+    position: relative;
+    background-color: white;
+    height: 495px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+
+#redtextcontainer {
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: right;
+    height: 495px;
+    width: 300px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px; 
+}
+
+#jerseycontainer {
+    position: relative;
+    height: 445px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+}
+
