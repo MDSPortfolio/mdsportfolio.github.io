@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Maps</title>
+        
+    
+        
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Quicksand" rel="stylesheet"> 
+    <meta charset=utf-8 />    
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+     
+        
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+        
+    <style>
+        
+    /* ------------------------------- specific css for leaflet popups on segregation map -------------------------- */
+    
+    .leaflet-popup-content-wrapper {
+      background: #707070;
+        }
+
+    .leaflet-popup-tip-container {
+      background: #707070, 0, 0;
+        }
+        
+    .leaflet-popup-tip {
+      border-left:5px solid transparent;
+      border-right:5px solid transparent;
+      border-top:20px solid #707070;
+        }
+
+    .leaflet-popup { 
+      color: #FDFF06;
+      font-size: 15px;
+        }
+    #popwrap {
+      background-color: #FDFF06;
+      color: #707070;
+      padding: 10px;
+      font-weight: bold;
+        }        
+    
+        
+    </style>
+    
+    </head>
+    <body>
+        
+    <div class='center'>
+    
+    <div id='h1fonts'>Maps</div>
+    
+    <div id='buttonbox'>
+        <a href="file:///C:/Users/Michael/Desktop/A_Portfolio/Home%20and%20Work%20and%20Maps/index.html" class="button">Home</a>
+        <a href="http://communitymaps.github.io/index.html" class="button">CV</a>
+        <a href="http://communitymaps.github.io/dropmetro.html" class="button">Work</a>
+        <a href="https://detroitideafactory.wordpress.com/" class="button">Blog</a>
+    </div>  
+        
+    <div id="h2fonts">
+        Mapping Racial Segregation in Metropolitan Detroit
+    </div>
+    
+    <div id='mapboxcontainer'>
+        <div id="legend">
+        <div id='legendtitle'>African American Population by block group, 2000 and 2010 U.S. Census</div>
+        <div id='text4box1'>Under 14%</div>
+        <div id='box1'></div>
+        <div id='box2'></div>
+        <div id='box3'></div>
+        <div id='box4'></div>
+        <div id='box5'></div>
+        <div id='text4box5'>Over 75%</div>
+        
+        
+        </div>
+        <div id='map'></div>
+    </div>
+        
+    <div id='h3fonts'>
+    Use the layer control icon in the top right corner to switch the basemap between 2000 and 2010 Census  data. Click on cities in Wayne, Oakland, Macomb, Washtenaw, Monroe and St. Clair counties for African American demographics, median income and total population in 2010. Block group data was processed and the choropleth was created in QGIS, made into a Mapbox basemap and displayed using Leaflet. The cities file is an external geojson brought in from Github. This map was made for part of the final project in an advanced GIS course at The New School in 2016.
+    </div>
+        
+    <div id="h2fonts">
+        Mapping Industry in North America
+    </div>
+       
+    <div id='cartocontainer' >
+        <iframe width="100%" height="400" frameborder="0" padding-top="20" src="https://mstepniak.carto.com/viz/3f70a490-9b20-11e5-a89e-0e5db1731f59/embed_map"></iframe>
+    </div>
+        
+    <div id='h3fonts'>
+    Click on the orange polygons for basic information about industrial sites. Use the search bar to navigate to other cities. Currently, Southwest Detroit’s industrial areas, and the Baton Rouge-New Orleans corridor along the Mississippi River in Lousiana are available. The data is the result of original research. The shapefiles were created in QGIS and are hosted and displayed by Carto. 
+    </div>
+        
+    <div id="h2fonts">
+        Mapping Preindustrial Conditions in Michigan
+    </div>
+        
+    <div class="preindust">
+            <img src="https://i.imgur.com/SJZyIwE.jpg" alt="Card Back">
+            <img src="https://i.imgur.com/KffzgtD.jpg" class="img-top" alt="Card Front">
+    </div>
+        
+    <div id='pretextcontainer'>
+        This map was inspired by “The Great Lakes in Ojibwe” by the Decolonial Atlas, and data from the 1816 Federal Survey of Michigan, which details pre-industrial land conditions and native plant life. The orange spaces represent pre-industrial swamps and wetlands. 
+        <p></p>
+        The arterial roads of Gratiot Avenue, Grand River Road and Michigan Avenue began as trading routes and trails for Native Americans. The locations of these trails were determined by the swamps and wetlands, as can be seen in this map by anyone familiar with the basic geography of Detroit. I made this map as an exploration of a deeper past, one that goes beyond Augustus Woodward’s influence and European contact.
+    </div>
+        
+    <span class='h2floatclear'>
+        
+    <div id="h2fonts">
+        Infrastructure and Typologies on 8 Mile Road
+    </div>
+        
+    <div class="eight">
+            <img src="https://i.imgur.com/BHmwg9J.jpg" alt="Card Back">
+            <img src="https://i.imgur.com/qDM6878.jpg" class="img-top" alt="Card Front">
+    </div>
+        
+    <div id='h3fonts'>
+        Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah
+    </div>
+            
+    <div id="h2fonts">
+        Income in Red Hook, Brooklyn
+    </div>
+        
+    </span>
+        
+    <div id='redcontainer'>
+        <a href="https://imgur.com/bcgt6XI"><img src="https://i.imgur.com/bcgt6XI.jpg" title="source: imgur.com" /></a>
+    </div>
+        
+    <div id='redtextcontainer'>
+        Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah
+        <p>
+        Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah! Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah?
+        Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah!!!
+        </p>
+        Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah.
+    </div>
+        
+    <span class='h2floatclear'>
+    
+    <div id="h2fonts">
+        20th Century Industry & 21st Century Development in Jersey City
+    </div>
+        
+    <div id='jerseycontainer'>
+        <a href="https://imgur.com/JSNukQ1"><img src="https://i.imgur.com/JSNukQ1.png" title="source: imgur.com" /></a>
+    </div>
+        
+    <div id='h3fonts'>
+        Lorem Ipsum Blah Blah Blah Blahbbitty Blahbbiddy Blah
+    </div>   
+        
+    
+        
+    
+        
+        
+        
+        
+        
+    </span>
+    </div>
+    <!-- !!!KEEP THIS, IT'S THE LEGEND!!!    
+    <div id='boxbox'>
+        
+    <div id='boxboxtext'>African American Population by block group, 2000 and 2010 U.S. Census</div>
+    <div id='text4box1'>Under 14%</div>
+   
+    <div id='box1'></div>
+    <div id='box2'></div>
+    <div id='box3'></div>
+    <div id='box4'></div>
+    <div id='box5'></div>
+   
+    <div id='text4box5'>Over 75%</div>
+        
+    </div> 
+       
+    
+    <div id='page-wrap'><h1>
+    Find your city on the map. Click it to find the African American population, median income and total population. Use the control  <img src="http://i.imgur.com/Z37qWsT.jpg"
+    alt="Pdoc" height="25" width="25"/>  in the upper right corner of the map to switch from 2010 to 2000 census data.<br><div id="subhead">Note: the popup windows give information from the 2010 census. Not every city is currently available. More will be added soon.</div>
+    </h1></div>
+    <div id='text'>
+        <i> Note: info windows give information from the 2010 census. Not every city is currently available. More will be added soon. </i>  
+    </div>    
+    -->
+        
+        
+   
+        
+    
+    
+        
+    <script>
+    var map = L.map('map').setView([42.431572, -83.294734], 10);
+   
+        
+        
+
+  
+        
+        
+  var CensusA = L.tileLayer('https://api.mapbox.com/styles/v1/mstepniak/cinamx0jk000kackp9r7jjbsi/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA', {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'     
+  });
+  var CensusB = L.tileLayer('https://api.mapbox.com/styles/v1/mstepniak/cinby8bji005db0nm4fyndkzp/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA', {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+
+  var baseLayers = {"2010": CensusB, "2000":CensusA};
+  L.control.layers(baseLayers).addTo(map);
+
+   
+    $.getJSON('https://cdn.rawgit.com/communitymaps/communitymaps.github.io/master/Geojson/u.geojson', function (data) {
+    L.geoJson(data, {
+            
+         onEachFeature: function (feature, layer){
+               layer.bindPopup('<div id="popwrap">2010 Census Data for:' + '<br>' + feature.properties.NAMELSAD10 + '</div></br>' + 'Percentage African American: ' + Math.round(feature.properties.y_Pct_Blk) + '%' + '<br>' + 'Median Household Income: $' + feature.properties.x_Med_Inc + '</br>' + 'Total Population: ' + feature.properties.y_Total_);
+           },
+        
+        
+            style: {
+                color: "black",
+                weight: 2,
+                fillOpacity: .05
+            }
+          }).addTo(map);
+ })
+    
+
+        
+    </script>
+    
+    
+    </body>
+</html>
