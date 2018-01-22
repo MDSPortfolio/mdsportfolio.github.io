@@ -65,6 +65,49 @@
     <div id="h2fonts">
         Mapping Racial Segregation in Metropolitan Detroit
     </div>
+        
+    <script>
+    var map = L.map('map').setView([42.431572, -83.294734], 10);
+   
+        
+        
+
+  
+        
+        
+  var CensusA = L.tileLayer('https://api.mapbox.com/styles/v1/mstepniak/cinamx0jk000kackp9r7jjbsi/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA', {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'     
+  });
+  var CensusB = L.tileLayer('https://api.mapbox.com/styles/v1/mstepniak/cinby8bji005db0nm4fyndkzp/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA', {
+        tileSize: 512,
+        zoomOffset: -1,
+        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+
+  var baseLayers = {"2010": CensusB, "2000":CensusA};
+  L.control.layers(baseLayers).addTo(map);
+
+   
+    $.getJSON('https://rawgit.com/MDSPortfolio/mdsportfolio.github.io/master/geojson/u.geojson', function (data) {
+    L.geoJson(data, {
+            
+         onEachFeature: function (feature, layer){
+               layer.bindPopup('<div id="popwrap">2010 Census Data for:' + '<br>' + feature.properties.NAMELSAD10 + '</div></br>' + 'Percentage African American: ' + Math.round(feature.properties.y_Pct_Blk) + '%' + '<br>' + 'Median Household Income: $' + feature.properties.x_Med_Inc + '</br>' + 'Total Population: ' + feature.properties.y_Total_);
+           },
+        
+        
+            style: {
+                color: "black",
+                weight: 2,
+                fillOpacity: .05
+            }
+          }).addTo(map);
+ })
+    
+
+        
+    </script>
     
     <div id='mapboxcontainer'>
         <div id="legend">
@@ -203,49 +246,4 @@
     
     
         
-    <script>
-    var map = L.map('map').setView([42.431572, -83.294734], 10);
    
-        
-        
-
-  
-        
-        
-  var CensusA = L.tileLayer('https://api.mapbox.com/styles/v1/mstepniak/cinamx0jk000kackp9r7jjbsi/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA', {
-        tileSize: 512,
-        zoomOffset: -1,
-        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'     
-  });
-  var CensusB = L.tileLayer('https://api.mapbox.com/styles/v1/mstepniak/cinby8bji005db0nm4fyndkzp/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXN0ZXBuaWFrIiwiYSI6ImNpbXF6eHZnNDAwdGF2aG00bHJtbWFweTkifQ.7xXe45mpEC-L6e8kh1fJvA', {
-        tileSize: 512,
-        zoomOffset: -1,
-        attribution: '<a href="https://www.mapbox.com/map-feedback/">Mapbox</a>  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-
-  var baseLayers = {"2010": CensusB, "2000":CensusA};
-  L.control.layers(baseLayers).addTo(map);
-
-   
-    $.getJSON('https://rawgit.com/MDSPortfolio/mdsportfolio.github.io/master/geojson/u.geojson', function (data) {
-    L.geoJson(data, {
-            
-         onEachFeature: function (feature, layer){
-               layer.bindPopup('<div id="popwrap">2010 Census Data for:' + '<br>' + feature.properties.NAMELSAD10 + '</div></br>' + 'Percentage African American: ' + Math.round(feature.properties.y_Pct_Blk) + '%' + '<br>' + 'Median Household Income: $' + feature.properties.x_Med_Inc + '</br>' + 'Total Population: ' + feature.properties.y_Total_);
-           },
-        
-        
-            style: {
-                color: "black",
-                weight: 2,
-                fillOpacity: .05
-            }
-          }).addTo(map);
- })
-    
-
-        
-    </script>
-    
-    
-    </body>
-</html>
